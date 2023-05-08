@@ -17,6 +17,8 @@ https://console.cloud.google.com/ for the google maps, places and other API's
 
 https://www.google.com/recaptcha/about/ for the recapture API
 
+https://pypi.org/project/humanfriendly/
+
 
 ISSUES:
 
