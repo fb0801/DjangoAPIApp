@@ -22,6 +22,8 @@ https://www.google.com/recaptcha/about/ for the recapture API
 
 https://pypi.org/project/humanfriendly/
 
+Origial repo can be found here -> https://github.com/bobby-didcoding/did_django_google_api_tutorial
+
 
 <h3>ISSUES:</h3>
 
