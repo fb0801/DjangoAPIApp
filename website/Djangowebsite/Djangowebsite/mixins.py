@@ -109,10 +109,34 @@ def Directions(*args, **kwargs):
 		route_list = []
 
 		for route in range(len(routes)):
-		 return {
+
+			distance += int(routes[route]["distance"]["value"])
+			duration += int(routes[route]["duration"]["value"])
+
+			route_step = {
+				'origin': routes[route]["start_address"],
+				'destination': routes[route]["end_address"],
+				'distance': routes[route]["distance"]["text"],
+				'duration': routes[route]["duration"]["text"],
+
+				'steps': [
+					[
+						s["distance"]["text"],
+						s["duration"]["text"],
+						s["html_instructions"],
+
+					]
+					for s in routes[route]["steps"]]
+				}
+
+			
+			route_list.append(route_step)
+			
+
+	return {
 		"origin": origin,
 		"destination": destination,
 		"distance": f"{round(distance/1000, 2)} Km",
 		"duration": format_timespan(duration),
 		"route": route_list
-		    }
+		}

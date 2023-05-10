@@ -58,8 +58,8 @@ ROOT_URLCONF = 'Djangowebsite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-            'templates'
+        'DIRS': ['templates'],
+            
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -129,9 +129,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn')
 
 GOOGLE_API_KEY= ""
 
-RECAPTCHA_KEY = ""
+RECAPTCHA_PUBLIC_KEY = ""
 
-RECAPTCHA_SECRET_KEY = ""
+RECAPTCHA_PRIVATE_KEY = ""
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
